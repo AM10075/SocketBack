@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://socket-front-98be.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
